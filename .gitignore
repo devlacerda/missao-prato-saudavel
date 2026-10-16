@@ -1,0 +1,45 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Exportações / builds
+/build/
+/export/
+/exports/
+*.apk
+*.aab
+*.ipa
+*.exe
+*.pck
+*.zip
+export_credentials.cfg
+
+# Godot C# / Mono (caso use no futuro)
+.mono/
+data_*/
+mono_crash.*.json
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e temporários
+*.log
+*.tmp

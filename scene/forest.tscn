@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bqegq0imyj70w"]
+
+[ext_resource type="PackedScene" uid="uid://j7op0masenjf" path="res://entities/player.tscn" id="1_e2knd"]
+[ext_resource type="Texture2D" uid="uid://ciktuyex42lkf" path="res://sprites/Seasonal Tilesets/6 - Vegetable Forest/Background Parts/terrain.png" id="2_2xpkg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbfvw"]
+texture = ExtResource("2_2xpkg")
+texture_region_size = Vector2i(137, 137)
+
+[sub_resource type="TileSet" id="TileSet_5if6x"]
+sources/1 = SubResource("TileSetAtlasSource_gbfvw")
+
+[node name="Forest" type="Node2D" unique_id=1493288559]
+
+[node name="Player" parent="." unique_id=207218434 instance=ExtResource("1_e2knd")]
+position = Vector2(32, 154)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=422488248]
+tile_set = SubResource("TileSet_5if6x")
